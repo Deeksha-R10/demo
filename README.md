@@ -138,9 +138,93 @@ Simple and intuitive menu for both users and admin
 │ ├── 📊Admin Dashboard <br>
 │ │ └──🗂️Feedback  <br>
 │ │ └──🧑‍💼Customer Feedback <br>
-│ │ └── 👨‍🔧Employee Feedback <br>
+│ │ └──👨‍🔧Employee Feedback <br>
 │ │ └──🔔Notifications <br>
-│ │ └── 👤Profile <br>
-│ │ └──🚪Logout <br>
+│ │ └──👤Profile <br>
+└────🚪Logout <br>
+
+## 📁 Project Structure
+
+online-feedback-system/<br>
+│<br>
+├── frontend/<br>
+│   ├── index.html<br>
+│   ├── about.html<br>
+│   ├── feedback.html<br>
+│   ├── verified-reviews.html<br>
+│   ├── admin-login.html<br>
+│   ├── css/<br>
+│   │   ├── style.css<br>
+│   │   └── responsive.css<br>
+│   ├── js/<br>
+│   │   ├── main.js<br>
+│   │   ├── form-validation.js<br>
+│   │   └── fetch-feedback.js<br>
+│   └── assets/<br>
+│       ├── images/<br>
+│       └── icons/<br>
+│<br>
+├── backend/<br>
+│   ├── src/<br>
+│   │   ├── AdminLoginServlet.java<br>
+│   │   ├── FeedbackSubmissionServlet.java<br>
+│   │   ├── FeedbackReviewServlet.java<br>
+│   │   ├── NotificationServlet.java<br>
+│   │   └── DBConnection.java<br>
+│   ├── WEB-INF/<br>
+│   │   ├── web.xml<br>
+│   │   └── lib/<br>
+│<br>
+├── database/<br>
+│   ├── schema.sql<br>
+│   └── sample_data.sql<br>
+│<br>
+├── docs/<br>
+│   ├── README.md<br>
+│   ├── Project_Report.pdf<br>
+│   └── Screenshots/<br>
+│<br>
+└── LICENSE<br>
+
+## 🧩Database Schema 
+- Users – Stores admin login credentials and role information.
+- Feedback – Contains all feedback submitted by customers and employees, including name, role, rating, category, message, and status.
+- Admin Responses – Stores the admin's replies to approved feedback entries, linked to specific feedback IDs.
+- Notifications – Holds notification messages displayed on the admin dashboard, including status (read/unread).
+- Verified Reviews – Contains feedback that has been approved by admin and is displayed publicly to all users.
+
+
+## 👥Team Roles
+
+| Role | Count | Responsibilities |
+|------|-------|------------------|
+| Frontend Developers | 2  | Designed UI, handled styling, created interactive forms and pages |
+| Backend Developers | 2 | Developed server-side logic in Java, connected to MySQL database |
+| Documentation & Frontend | 1 | Prepared documentation and supported additional frontend design work |
+
+
+## 📱 Responsive Design
+- Mobile-First design
+- Tablet-friendly layouts
+- Desktop dashboard with more control
+- Cross-browser tested: Chrome, Firefox, Safari, Edge
+
+## 🧪Testing
+- Test Coverage:
+     - Feedback form validation
+     - Admin login and dashboard logic
+     - Feedback filtering and review update
+     - Responsive behavior on multiple devices
+     - Sample test data for database
+
+## 📞Support
+For questions or help:
+- Open an issue in the GitHub repository
+- Refer to documentation inside /docs folder
+- Contact the project contributors
+
+## 📄License
+This project is licensed under the MIT License.
+
 
 
